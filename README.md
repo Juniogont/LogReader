@@ -32,13 +32,13 @@ popular o banco de dados.
 
 #### Instruções 
     
-	-Alterar a ConnectionString com um servidor e user PostGreSQL Válido
+- Alterar a ConnectionString com um servidor e user PostGreSQL Válido
 	Arquivos: 
 		appsettings.json:
 		Linha 3 - "LogReaderConnectionString": "User ID =postgres;Password=123qwe;Server=localhost;Port=5432;Database=DBLogReader;Integrated Security=true;Pooling=true;"
 		LogReaderDbContext:
 		Linha 19 - options.UseNpgsql(@"User ID =postgres;Password=123qwe;Server=localhost;Port=5432;Database=DBLogReader;Integrated Security=true;Pooling=true; ",
-	- Rodar o migration para criar as tabelas no DB (update-database)
-	
+- Rodar o migration para criar as tabelas no DB (update-database)
+- O BackEnd deve estar rodando para o FrontEnd rodar sem erros
 
 
